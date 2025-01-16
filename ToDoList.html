@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .friend-section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Monthly To-Do List</h1>
+        <form action="submit_todo.php" method="post">
+            <!-- Surya -->
+            <div class="friend-section">
+                <label for="surya">Surya's To-Do List</label>
+                <textarea id="surya" name="surya" placeholder="Enter tasks for Surya" rows="3"></textarea>
+            </div>
+
+            <!-- Mohit -->
+            <div class="friend-section">
+                <label for="mohit">Mohit's To-Do List</label>
+                <textarea id="mohit" name="mohit" placeholder="Enter tasks for Mohit" rows="3"></textarea>
+            </div>
+
+            <!-- Anikesh -->
+            <div class="friend-section">
+                <label for="anikesh">Anikesh's To-Do List</label>
+                <textarea id="anikesh" name="anikesh" placeholder="Enter tasks for Anikesh" rows="3"></textarea>
+            </div>
+
+            <!-- Aditya -->
+            <div class="friend-section">
+                <label for="aditya">Aditya's To-Do List</label>
+                <textarea id="aditya" name="aditya" placeholder="Enter tasks for Aditya" rows="3"></textarea>
+            </div>
+
+            <!-- Deepanshu -->
+            <div class="friend-section">
+                <label for="deepanshu">Deepanshu's To-Do List</label>
+                <textarea id="deepanshu" name="deepanshu" placeholder="Enter tasks for Deepanshu" rows="3"></textarea>
+            </div>
+
+            <button type="submit">Submit To-Do Lists</button>
+        </form>
+    </div>
+</body>
+</html>
