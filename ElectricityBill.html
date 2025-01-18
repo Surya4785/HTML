@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .bill-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffffff;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .bill-container h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        .bill-container table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .bill-container table, .bill-container th, .bill-container td {
+            border: 1px solid #ddd;
+        }
+        .bill-container th, .bill-container td {
+            padding: 10px;
+            text-align: left;
+        }
+        .bill-container th {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        .bill-container .total {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <div class="bill-container">
+        <h1>Electricity Bill</h1>
+        <p><strong>Name:</strong> Surya Prakash Yadav</p>
+        <p><strong>Bill Date:</strong> January 2025</p>
+        <p><strong>Bill Number:</strong> EB-20250118</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Units</th>
+                    <th>Rate (per unit)</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Electricity Consumption</td>
+                    <td>350</td>
+                    <td>&#8377; 6</td>
+                    <td>&#8377; 2,100</td>
+                </tr>
+                <tr>
+                    <td>Fixed Charges</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>&#8377; 150</td>
+                </tr>
+                <tr>
+                    <td>Taxes and Surcharges</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>&#8377; 250</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="total">Total Amount Payable</td>
+                    <td class="total">&#8377; 2,500</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
