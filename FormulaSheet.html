@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Differentiation and Integration Formula Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .formula-section {
+            margin-bottom: 30px;
+        }
+        .formula-section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .formula {
+            margin: 10px 0;
+        }
+        .formula b {
+            font-weight: bold;
+        }
+        .formula-code {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: "Courier New", monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Differentiation and Integration Formula Sheet</h1>
+
+    <div class="formula-section">
+        <h2>Differentiation Formulas</h2>
+        
+        <div class="formula">
+            <b>1. Constant Rule:</b>
+            <div class="formula-code">
+                <code>d/dx(c) = 0</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>2. Power Rule:</b>
+            <div class="formula-code">
+                <code>d/dx(x^n) = n * x^(n-1)</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>3. Sum/Difference Rule:</b>
+            <div class="formula-code">
+                <code>d/dx(f(x) ± g(x)) = d/dx(f(x)) ± d/dx(g(x))</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>4. Product Rule:</b>
+            <div class="formula-code">
+                <code>d/dx(f(x) * g(x)) = f'(x) * g(x) + f(x) * g'(x)</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>5. Quotient Rule:</b>
+            <div class="formula-code">
+                <code>d/dx(f(x) / g(x)) = [f'(x) * g(x) - f(x) * g'(x)] / (g(x))^2</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>6. Chain Rule:</b>
+            <div class="formula-code">
+                <code>d/dx(f(g(x))) = f'(g(x)) * g'(x)</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>7. Exponential Functions:</b>
+            <div class="formula-code">
+                <code>d/dx(e^x) = e^x</code><br>
+                <code>d/dx(a^x) = a^x * ln(a)</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>8. Logarithmic Functions:</b>
+            <div class="formula-code">
+                <code>d/dx(ln(x)) = 1/x</code><br>
+                <code>d/dx(log_a(x)) = 1/(x * ln(a))</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>9. Trigonometric Functions:</b>
+            <div class="formula-code">
+                <code>d/dx(sin(x)) = cos(x)</code><br>
+                <code>d/dx(cos(x)) = -sin(x)</code><br>
+                <code>d/dx(tan(x)) = sec^2(x)</code><br>
+                <code>d/dx(cot(x)) = -csc^2(x)</code><br>
+                <code>d/dx(sec(x)) = sec(x) * tan(x)</code><br>
+                <code>d/dx(csc(x)) = -csc(x) * cot(x)</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>10. Inverse Trigonometric Functions:</b>
+            <div class="formula-code">
+                <code>d/dx(sin^-1(x)) = 1/√(1 - x^2)</code><br>
+                <code>d/dx(cos^-1(x)) = -1/√(1 - x^2)</code><br>
+                <code>d/dx(tan^-1(x)) = 1/(1 + x^2)</code>
+            </div>
+        </div>
+    </div>
+
+    <div class="formula-section">
+        <h2>Integration Formulas</h2>
+        
+        <div class="formula">
+            <b>1. Power Rule (For Integration):</b>
+            <div class="formula-code">
+                <code>∫x^n dx = x^(n+1)/(n+1) + C</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>2. Sum/Difference Rule (For Integration):</b>
+            <div class="formula-code">
+                <code>∫(f(x) ± g(x)) dx = ∫f(x) dx ± ∫g(x) dx</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>3. Exponential Functions:</b>
+            <div class="formula-code">
+                <code>∫e^x dx = e^x + C</code><br>
+                <code>∫a^x dx = a^x / ln(a) + C</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>4. Logarithmic Functions:</b>
+            <div class="formula-code">
+                <code>∫1/x dx = ln|x| + C</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>5. Trigonometric Functions:</b>
+            <div class="formula-code">
+                <code>∫sin(x) dx = -cos(x) + C</code><br>
+                <code>∫cos(x) dx = sin(x) + C</code><br>
+                <code>∫tan(x) dx = ln|sec(x)| + C</code><br>
+                <code>∫cot(x) dx = ln|sin(x)| + C</code><br>
+                <code>∫sec(x) dx = ln|sec(x) + tan(x)| + C</code><br>
+                <code>∫csc(x) dx = -ln|csc(x) + cot(x)| + C</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>6. Inverse Trigonometric Functions:</b>
+            <div class="formula-code">
+                <code>∫1/√(1 - x^2) dx = sin^-1(x) + C</code><br>
+                <code>∫1/(1 + x^2) dx = tan^-1(x) + C</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>7. Substitution (Change of Variable):</b>
+            <div class="formula-code">
+                <code>∫f(g(x))g'(x) dx = ∫f(u) du</code>
+            </div>
+        </div>
+
+        <div class="formula">
+            <b>8. Integration by Parts:</b>
+            <div class="formula-code">
+                <code>∫u dv = uv - ∫v du</code>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
